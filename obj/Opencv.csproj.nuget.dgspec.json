@@ -38,6 +38,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "OpenCvSharp": {
+              "target": "Package",
+              "version": "[2.4.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,0 +1,69 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Opencv/1.0.0": {
+        "dependencies": {
+          "OpenCVSharp": "2.4.0.1"
+        },
+        "runtime": {
+          "Opencv.dll": {}
+        }
+      },
+      "OpenCVSharp/2.4.0.1": {
+        "runtime": {
+          "lib/OpenCvSharp.Blob.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/OpenCvSharp.CPlusPlus.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/OpenCvSharp.DebuggerVisualizers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/OpenCvSharp.Extensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/OpenCvSharp.Gpu.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/OpenCvSharp.MachineLearning.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/OpenCvSharp.UserInterface.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/OpenCvSharp.dll": {
+            "assemblyVersion": "2.0.4666.42387",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Opencv/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OpenCVSharp/2.4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tGa7NCBHvUCbZRo+YbmY6bMgw/iFikXqrHSzLtg0BIRWH1hp/lbzNm3VQUq0wr6UXeHQf12hiRWEMuGGhIks4w==",
+      "path": "opencvsharp/2.4.0.1",
+      "hashPath": "opencvsharp.2.4.0.1.nupkg.sha512"
+    }
+  }
+}
