@@ -37,6 +37,9 @@ namespace Opencv
 				path=Console.ReadLine();
 				Console.WriteLine($"このパスでよろしいですか？大丈夫な場合は1を入力してください。\n{path}");
 			}
+			di = new DirectoryInfo("./saves");
+			di.Create();
+			di = null;
 			savepath=$"./saves/{Path.GetFileNameWithoutExtension(path)}";
 			di = new DirectoryInfo(savepath);
 			di.Create();
