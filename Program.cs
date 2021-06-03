@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using OpenCvSharp;
 using OpenCvSharp.Extensions;
 using System.Drawing;
@@ -38,14 +39,15 @@ namespace Opencv
 			}
 			savepath=$"./saves/{Path.GetFileNameWithoutExtension(path)}";
 			di = new DirectoryInfo(savepath);
+			di.Create();
 			vc = new VideoCapture(path);
-			Console.WriteLine($"AllFrames:{vc.FrameCount}");
+			Console.WriteLine($"AllFrames:{vc.FrameCount}\npath{savepath}");
 			for(int i = 0;i<vc.FrameCount;i++){
 				vc.PosFrames = i;
 				if(i!=0){
 					vc.Read(_mt);
 					if(ic.Compare(BitmapConverter.ToBitmap(mt),BitmapConverter.ToBitmap(_mt))){
-						mt = _mt;
+						vc.Read(mt);
 						BitmapConverter.ToBitmap(mt).Save($"{savepath}/{i}.jpg");
 						Console.WriteLine($"SaveFrame:{i+1}Frame.");
 					}else{
@@ -56,7 +58,7 @@ namespace Opencv
 					BitmapConverter.ToBitmap(mt).Save($"{savepath}/{i}.jpg");
 					Console.WriteLine($"SaveFrame:{i+1}Frame.");
 				}
-				Console.WriteLine($"CompleteTask:{vc.FrameCount-i}...{100*((vc.FrameCount-i)/vc.FrameCount)}");
+				Console.WriteLine($"CompleteTask:{vc.FrameCount-i}...{100*(1-((float)(vc.FrameCount-i)/vc.FrameCount))}%\n");
 			}
         }
     }
