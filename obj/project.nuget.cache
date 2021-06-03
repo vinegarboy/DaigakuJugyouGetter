@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "COOQamuwqgf5TP/yrtoJQ8Y1KMnyW38pcYk7LPolJvB/ds3oUvODGqJv4WiA1ztTdK3k5bwOfMABZc8T9hok0w==",
+  "dgSpecHash": "Xc+e/0dy08CW+xoTdJCZK/7FQ8ScvN1/iRu2Lnp9Z968I7Q31zbsEkJM5ksC0zQOPHs+vRSlCxCWthHaZCbAHQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\koder\\Documents\\Projects\\Opencv\\Opencv.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\koder\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\koder\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\koder\\.nuget\\packages\\opencvsharp4\\4.5.2.20210404\\opencvsharp4.4.5.2.20210404.nupkg.sha512",
+    "C:\\Users\\koder\\.nuget\\packages\\opencvsharp4.runtime.win\\4.5.2.20210404\\opencvsharp4.runtime.win.4.5.2.20210404.nupkg.sha512",
+    "C:\\Users\\koder\\.nuget\\packages\\opencvsharp4.windows\\4.5.2.20210404\\opencvsharp4.windows.4.5.2.20210404.nupkg.sha512",
+    "C:\\Users\\koder\\.nuget\\packages\\opencvsharp4.wpfextensions\\4.5.2.20210404\\opencvsharp4.wpfextensions.4.5.2.20210404.nupkg.sha512",
     "C:\\Users\\koder\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512",
     "C:\\Users\\koder\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\koder\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"

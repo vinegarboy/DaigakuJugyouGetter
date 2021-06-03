@@ -20,3 +20,8 @@ C:\Users\koder\Documents\Projects\Opencv\bin\Debug\netcoreapp3.1\runtimes\win\li
 C:\Users\koder\Documents\Projects\Opencv\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\koder\Documents\Projects\Opencv\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\koder\Documents\Projects\Opencv\obj\Debug\netcoreapp3.1\Opencv.genruntimeconfig.cache
+C:\Users\koder\Documents\Projects\Opencv\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\OpenCvSharpExtern.dll
+C:\Users\koder\Documents\Projects\Opencv\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\OpenCvSharpExtern.dll
+C:\Users\koder\Documents\Projects\Opencv\bin\Debug\netcoreapp3.1\OpenCvSharp.WpfExtensions.dll
+C:\Users\koder\Documents\Projects\Opencv\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\opencv_videoio_ffmpeg452_64.dll
+C:\Users\koder\Documents\Projects\Opencv\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\opencv_videoio_ffmpeg452.dll

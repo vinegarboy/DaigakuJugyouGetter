@@ -1,13 +1,11 @@
-﻿using System.Globalization;
-using System;
+﻿using System;
 using OpenCvSharp;
 using OpenCvSharp.Extensions;
 using System.Drawing;
 using System.IO;
 namespace Opencv
 {
-    class Program
-    {
+	class ImgCompare{
 		public bool Compare(Bitmap bp1,Bitmap bp2){
 			bool result = false;
 			for(int x = 0;x<bp1.Width;x++){
@@ -20,8 +18,12 @@ namespace Opencv
 			}
 			return result;
 		}
+	}
+    class Program
+    {
         static void Main(string[] args)
         {
+			ImgCompare ic = new ImgCompare();
 			string path,savepath;
 			VideoCapture vc;
 			Mat mt = new Mat(),_mt = new Mat();
@@ -42,7 +44,7 @@ namespace Opencv
 				vc.PosFrames = i;
 				if(i!=0){
 					vc.Read(_mt);
-					if(Compare(BitmapConverter.ToBitmap(mt),BitmapConverter.ToBitmap(_mt))){
+					if(ic.Compare(BitmapConverter.ToBitmap(mt),BitmapConverter.ToBitmap(_mt))){
 						mt = _mt;
 						BitmapConverter.ToBitmap(mt).Save($"{savepath}/{i}.jpg");
 						Console.WriteLine($"SaveFrame:{i+1}Frame.");
