@@ -14,6 +14,7 @@ namespace Opencv
 				for(int y = 0;y<bp1.Height;y++){
 					if(bp1.GetPixel(x,y)!=bp2.GetPixel(x,y)){
 						result = true;
+						break;
 					}
 				}
 			}
@@ -36,6 +37,7 @@ namespace Opencv
 			savepath=$"./saves/{Path.GetFileNameWithoutExtension(path)}";
 			di = new DirectoryInfo(savepath);
 			vc = new VideoCapture(path);
+			Console.WriteLine($"AllFrames:{vc.FrameCount}");
 			for(int i = 0;i<vc.FrameCount;i++){
 				vc.PosFrames = i;
 				if(i!=0){
@@ -43,11 +45,16 @@ namespace Opencv
 					if(Compare(BitmapConverter.ToBitmap(mt),BitmapConverter.ToBitmap(_mt))){
 						mt = _mt;
 						BitmapConverter.ToBitmap(mt).Save($"{savepath}/{i}.jpg");
+						Console.WriteLine($"SaveFrame:{i+1}Frame.");
+					}else{
+						Console.WriteLine($"NotSaves:{i+1}Frame.");
 					}
 				}else{
 					vc.Read(mt);
 					BitmapConverter.ToBitmap(mt).Save($"{savepath}/{i}.jpg");
+					Console.WriteLine($"SaveFrame:{i+1}Frame.");
 				}
+				Console.WriteLine($"CompleteTask:{vc.FrameCount-i}...{100*((vc.FrameCount-i)/vc.FrameCount)}");
 			}
         }
     }
