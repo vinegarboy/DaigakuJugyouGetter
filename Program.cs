@@ -9,8 +9,15 @@ namespace Opencv
     class Program
     {
 		public bool Compare(Bitmap bp1,Bitmap bp2){
-
-			return true;
+			bool result = false;
+			for(int x = 0;x<bp1.Width;x++){
+				for(int y = 0;y<bp1.Height;y++){
+					if(bp1.GetPixel(x,y)!=bp2.GetPixel(x,y)){
+						result = true;
+					}
+				}
+			}
+			return result;
 		}
         static void Main(string[] args)
         {
