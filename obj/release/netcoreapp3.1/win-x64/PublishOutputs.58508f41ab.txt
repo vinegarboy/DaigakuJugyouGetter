@@ -1,0 +1,2 @@
+C:\Users\koder\Documents\Projects\Opencv\bin\Release\netcoreapp3.1\win-x64\publish\Opencv.pdb
+C:\Users\koder\Documents\Projects\Opencv\bin\Release\netcoreapp3.1\win-x64\publish\Opencv.exe
